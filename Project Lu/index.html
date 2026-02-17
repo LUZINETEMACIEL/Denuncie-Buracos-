@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncie Buracos e Problemas na Via Pública - Prefeitura de Manaus</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<header>
+    <h1>Denuncie Buracos e Problemas na Via Pública - Prefeitura de Manaus</h1>
+</header>
+
+<main>
+    <form>
+        <input type="text" id="nome" placeholder="Nome (Opcional)" required>
+        <input type="text" id="telefone" placeholder="Telefone (Opcional)" required>
+        <input type="text" id="email" placeholder="Email (Opcional)" required>
+        <input type="text" id="endereco" placeholder="Endereço da Ocorrência" required>
+        
+         <select id="tipo_problema" required>
+            <option value="" disabled selected>Selecione o Tipo de Problema</option>
+            <option value="buraco_pequeno">Buraco Pequeno (até 30cm)</option>
+            <option value="buraco_grande">Buraco Grande (mais de 30cm)</option>
+            <option value="asfalto_cedendo">Asfalto Rachado ou Cedendo</option>
+            <option value="bueiro_aberto">Bueiro Aberto ou Quebrado</option>
+            <option value="outro">Outro Problema na Via</option>
+        </select>
+        <textarea id="mensagem" rows="10" maxlength="5000" placeholder="Descreva a situação (Ex: Tamanho do buraco, há quanto tempo existe, faixa da rua, etc.)" required></textarea>
+        <input type="file" id="imagem" accept="image/*">
+       <button type="submit" class="submit-btn">Enviar Denúncia</button>
+    </form>
+</main>
+
+<footer>
+    <p>Prefeitura de Manaus - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
